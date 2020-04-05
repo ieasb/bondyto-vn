@@ -17,7 +17,7 @@ monogatari.settings({
 	// The name of your game, this will be used to store all the data so once
 	// you've released a game using one name, it shouldn't change. Please use the
 	// Version Setting to indicate a new release of your game!
-	'Name': 'Coronavirus',
+	'Name': 'Episodio 01',
 
 	// The version of your game in semantic versioning (https://semver.org/).
 	'Version': '0.1.0',
@@ -48,7 +48,7 @@ monogatari.settings({
 	'AutoSave': 0,
 
 	// Enable service workers; Default: true *
-	'ServiceWorkers': true,
+	'ServiceWorkers': false,
 
 	// The Aspect Ratio your background images are on. This only has effect on
 	// web deployed novels if forceAspectRatio flag is on.
@@ -128,7 +128,6 @@ monogatari.settings({
 
 // Initial Settings
 monogatari.preferences ({
-
 	// Initial Language for Multilanguage Games or for the Default GUI Language.
 	'Language': 'Español',
 
