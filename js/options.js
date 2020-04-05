@@ -17,7 +17,7 @@ monogatari.settings({
 	// The name of your game, this will be used to store all the data so once
 	// you've released a game using one name, it shouldn't change. Please use the
 	// Version Setting to indicate a new release of your game!
-	'Name': 'Episodio 01',
+	'Name': 'Episodio 1: Aprendo En Casa',
 
 	// The version of your game in semantic versioning (https://semver.org/).
 	'Version': '0.1.0',
