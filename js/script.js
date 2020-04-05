@@ -6,7 +6,7 @@ monogatari.component ('main-screen').template (() => {
             <a href="https://asb.edu.pe"><img src="assets/images/header.png" /></a>
         </div>
         <br>
-	<h3>Episodio 1:</h3>
+        <h3>Episodio 1:</h3>
         <h1>Aprendo En Casa</h1>
         </div>
     `;
@@ -124,7 +124,7 @@ monogatari.script ({
         'show scene school with fadeIn',
         'show character b1 normal at center with fadeIn',
         'b1 Hola, mi nombre es <strong>Bondyta</strong> y desde hoy estaré acompañándote en tus clases durante el aislamiento social.',
-        'b1 Bueno, como ya sabes, los profesores y los padres ya habían preparado todo para el inicio de clases, pero...',
+        'b1 Bueno, como ya sabes, los profesores y nuestros padres ya habían preparado todo para el inicio de clases, pero...',
         'b1 la llegada del coronavirus COVID-19 a nuestro país hizo que los planes tengan que cambiar.',
         'b1 Sí, ya sé... Hemos pasado varios días en cuarentena y eso está bien porque ¡la salud es lo más importante!',
         'b1 y cuidándonos es cómo vamos a podemos cuidar a los demás...',
