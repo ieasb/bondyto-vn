@@ -23,6 +23,34 @@ monogatari.action ('message').messages ({
             <p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
         `
     },
+    'SchedulingPrimary': {
+        title: 'Programación de primaria',
+        subtitle: 'Fuente: <a href="https://aprendoencasa.pe/static/media/Programacion_Radio_TV_5_Abril.39da82c3.pdf">Aprendo En Casa</a>',
+        body: `
+            <table style="width:100%">
+                <tr>
+                    <th>Grado</th>
+                    <th>Televisión</th>
+                    <th>Radio</th>
+                </tr>
+                <tr>
+                    <td>1° y 2°</td>
+                    <td>Lunes 6 - 10:30 a.m.</td>
+                    <td>Lunes 6 y Miércoles 8 - 3:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td>3° y 4°</td>
+                    <td>Martes 7 - 10:30 a.m.</td>
+                    <td>Lunes 6 y Miércoles 8 - 3:30 p.m.</td>
+                </tr>
+                <tr>
+                    <td>5° y 6°</td>
+                    <td>Miércoles 8 - 10:30 a.m.</td>
+                    <td>Lunes 6 y Miércoles 8 - 4:00 p.m.</td>
+                </tr>
+            </table>
+        `
+    },
     'HandwashingVideo': {
         title: 'Lavado de manos',
         subtitle: 'Créditos: <a href="https://www.youtube.com/channel/UCnsvJeZO4RigQ898WdDNoBw">EL PAÍS</a>',
@@ -175,7 +203,11 @@ monogatari.script ({
     ],
     'End': [
         // 'show character b1 goodbye at center',
-        'b1 Recuerda lavarte las manos a menudo y no salir de casa. ¡Hasta la próxima!',
+        'b1 Antes de despedirme, quisiera recordarte que no debes salir de casa, sé que quieres salir a jugar...',
+        'b1 y pasear pero en estos momentos son únicamente los adultos quienes podrán salir a comprar alimentos o medicinas.',
+        'b1 Recuerda siempre lavarte las manos y por más de 20 segundos, déjame mostrarte un vídeo de cómo hacerlo correctamente.',
+        'show message HandwashingVideo',
+        'b1 ¡Hasta la próxima, {{player.name}}!',
         'hide character b1 with fadeOut',
         'show background #ed1b24 with fadeIn duration 7s',
         `
@@ -190,6 +222,13 @@ monogatari.script ({
     ]
 });
 
+var openAprendoEnCasaPrimary = function() {
+    return openNewWindow('https://aprendoencasa.pe/#/nivel/primaria');
+}
+
+var openAprendoEnCasaSecondary = function() {
+    return openNewWindow('https://aprendoencasa.pe/#/nivel/secundaria');
+}
 
 var openTVPeru = function() {
     return openNewWindow('https://www.tvperu.gob.pe/play');
