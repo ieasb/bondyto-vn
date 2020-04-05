@@ -6,6 +6,7 @@ monogatari.component ('main-screen').template (() => {
             <a href="https://asb.edu.pe"><img src="assets/images/header.png" /></a>
         </div>
         <br>
+        <br>
         <h3>Episodio 1:</h3>
         <h1>Aprendo En Casa</h1>
         </div>
@@ -126,9 +127,9 @@ monogatari.script ({
         'b1 Hola, mi nombre es <strong>Bondyta</strong> y desde hoy estaré acompañándote en tus clases durante el aislamiento social.',
         'b1 Bueno, como ya sabes, los profesores y nuestros padres ya habían preparado todo para el inicio de clases, pero...',
         'b1 la llegada del coronavirus COVID-19 a nuestro país hizo que los planes tengan que cambiar.',
-        'b1 Sí, ya sé... Hemos pasado varios días en cuarentena y eso está bien porque ¡la salud es lo más importante!',
-        'b1 y cuidándonos es cómo vamos a podemos cuidar a los demás...',
-        'b1 ¡Ups!, creo que he hablado demasiado y no te he dejado ni siquiera decir tu nombre',
+        'b1 Sí, ya sé... hemos pasado varios días en cuarentena y eso está bien porque ¡la salud es lo más importante!',
+        'b1 y cuidándonos es cómo vamos a podemos cuidar a los demás.',
+        'b1 ¡Ups!, creo que he hablado demasiado y no te he dejado ni siquiera decir tu nombre...',
         {
             'Input': {
                 'Text': '¿Cómo te llamas?',
@@ -156,7 +157,8 @@ monogatari.script ({
         'b1 ¡Es un gusto conocerte, {{player.name}}!',
         'b1 Te cuento que el Gobierno está haciendo todo lo posible para que nuestra educación no se vea afectada',
         'b1 y es por eso que ha creado el programa de educación a distancia llamado "Aprendo En Casa".',
-        'b1 Esta el manera en la que podremos seguir aprendiendo desde nuestras casas a través de radio, televisión o internet',
+        'b1 De esta manera podremos seguir aprendiendo desde nuestras casas...',
+        'b1 ya sea a través de radio, televisión o internet a partir del 6 de abril.',
         {
             'Choice': {
                 'Dialog': 'b1 Cuéntame tú ahora, ¿en qué nivel estás?',
@@ -187,3 +189,21 @@ monogatari.script ({
         'end'
     ]
 });
+
+
+var openTVPeru = function() {
+    return openNewWindow('https://www.tvperu.gob.pe/play');
+}
+
+var openIPe = function() {
+    return openNewWindow('https://www.canalipe.tv/streaming');
+}
+
+var openRadioNacional = function() {
+    return openNewWindow('https://radionacional.com.pe/envivo');
+}
+
+function openNewWindow(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+}
