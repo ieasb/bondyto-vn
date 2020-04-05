@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> <!--Change the lang property to your web"s language-->
+
+	<head prefix="og: http://ogp.me/ns#">
+
+		<title>Bondyta y Bondyto</title> <!--Up to 60-70 Characters. Optimal Format: Primary Keyword - Secondary Keyword | Brand Name-->
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval'">
+		<meta name="description" content=""> <!--Page description. No longer than 155 characters.-->
+		<meta name="keywords" content="">
+		<meta name="author" content=""> <!--Name of the author.-->
+
+		<!--Facebook Meta Tags-->
+		<meta property="og:image" content="http://" /> <!--URL of Image to show-->
+		<meta property="og:description" content="" /> <!--Page Description-->
+		<meta property="og:site_name" content="" /> <!--The Name Here-->
+		<meta property="og:url" content="http://" /> <!--The Web main URL-->
+		<meta property="og:title" content="" /> <!--The Title Here-->
+
+		<!--Google Meta Tags-->
+		<meta itemprop="name" content=""> <!--The Name or Title Here-->
+		<meta itemprop="description" content=""> <!--Page Description-->
+		<meta itemprop="image" content="http://"> <!--URL of Image to show-->
+
+		<!--Twitter Meta Tags - You"ll have to validate your website here: https://dev.twitter.com/docs/cards/validation/validator-->
+		<meta name="twitter:card" content="summary_large_image"> <!--Content Card Type-->
+		<meta name="twitter:domain" content=""> <!--Your web"s domain-->
+		<meta name="twitter:site" content="@"> <!--@publisher-->
+		<meta name="twitter:title" content=""> <!--Page Title-->
+		<meta name="twitter:description" content=""> <!--Page description less than 200 characters-->
+		<meta name="twitter:creator" content="@"> <!--@author-->
+		<meta name="twitter:image:src" content="http://"> <!--URL of Image to show-->
+
+		<!--<link rel="publisher" href=""> Publisher"s Google+ URL-->
+
+		<meta name="theme-color" content=""><!--Theme color for browsers in hexadecimal format.-->
+
+		<link rel="shortcut icon" href="favicon.png" type="image/png" />
+		<!--<link rel="canonical" href=""> Canonical URL of your webpage-->
+
+		<link rel="manifest" href="manifest.json">
+
+		<!-- Third Party CSS Libraries -->
+
+		<!-- Monogatari CSS Libraries -->
+		<link rel="stylesheet" href="./engine/core/monogatari.css">
+		<link rel="stylesheet" href="./style/main.css">
+
+		<!-- Third Party JavaScript Libraries -->
+		<script src="./js/vendor/jquery.min.js"></script>
+
+		<!-- Monogatari JavaScript Libraries -->
+		<script src="./engine/debug/debug.js"></script>
+		<script src="./engine/core/monogatari.js"></script>
+		<script src="./js/options.js"></script>
+		<script src="./js/storage.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/primary.js"></script>
+		<script src="./js/secondary.js"></script>
+		<script src="./js/main.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Fallback when JavaScript is not available -->
+		<noscript>
+			<div class="middle text--center">
+				<h2>JavaScript Disabled or not Supported.</h2>
+				<small>To play this game, please enable JavaScript executing or use a different browser.</small>
+			</div>
+		</noscript>
+
+		<div id="monogatari">
+			<visual-novel>
+				<loading-screen></loading-screen>
+				<main-screen>
+					<main-menu></main-menu>
+				</main-screen>
+				<game-screen>
+					<dialog-log></dialog-log>
+					<text-box></text-box>
+					<quick-menu></quick-menu>
+				</game-screen>
+				<gallery-screen></gallery-screen>
+				<credits-screen></credits-screen>
+				<load-screen></load-screen>
+				<save-screen></save-screen>
+				<settings-screen></settings-screen>
+				<help-screen></help-screen>
+			</visual-novel>
+		</div>
+	</body>
+
+</html>
