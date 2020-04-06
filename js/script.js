@@ -179,7 +179,7 @@ monogatari.script ({
         'b1 Bueno, como ya sabes, los profesores y nuestros padres ya habían preparado todo para el inicio de clases, pero...',
         'b1 la llegada del coronavirus COVID-19 a nuestro país hizo que los planes tengan que cambiar.',
         'b1 Sí, ya sé... hemos pasado varios días en cuarentena y eso está bien porque ¡la salud es lo más importante!',
-        'b1 y cuidándonos es cómo vamos a podemos cuidar a los demás.',
+        'b1 y cuidándonos es cómo vamos a poder cuidar a los demás.',
         'b1 ¡Ups!, creo que he hablado demasiado y no te he dejado ni siquiera decir tu nombre...',
         {
             'Input': {
