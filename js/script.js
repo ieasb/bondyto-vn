@@ -51,6 +51,29 @@ monogatari.action ('message').messages ({
             </table>
         `
     },
+    'SchedulingSecondary': {
+        title: 'Programación de secundaria',
+        subtitle: 'Fuente: <a href="https://aprendoencasa.pe/static/media/Programacion_Radio_TV_5_Abril.39da82c3.pdf">Aprendo En Casa</a>',
+        body: `
+            <table style="width:100%">
+                <tr>
+                    <th>Grado</th>
+                    <th>Televisión</th>
+                    <th>Radio</th>
+                </tr>
+                <tr>
+                    <td>1° y 2°</td>
+                    <td>Lunes 6 - 2:00 p.m.</td>
+                    <td>Lunes 6 y Miércoles 8 - 9:00 a.m.</td>
+                </tr>
+                <tr>
+                    <td>3°, 4° y 5°</td>
+                    <td>Martes 7 - 2:00 a.m.</td>
+                    <td>Lunes 6 y Miércoles 8 - 9:30 a.m.</td>
+                </tr>
+            </table>
+        `
+    },
     'HandwashingVideo': {
         title: 'Lavado de manos',
         subtitle: 'Créditos: <a href="https://www.youtube.com/channel/UCnsvJeZO4RigQ898WdDNoBw">EL PAÍS</a>',
@@ -200,6 +223,43 @@ monogatari.script ({
                 }
             }
         }
+    ],
+    'BroadcastingDetails': [
+        'b1 Así que podrás ver las clases a través del canal TV Perú y el canal IPe en el horario que mencioné',
+        'b1 y por cierto, si estos canales no los puedes sintonizar en tu televisor, los puedes ver por internet...',
+        {
+            'Choice': {
+                'Dialog': 'b1 ¿Quieres ver algún canal ahora mismo?',
+                'TVPerú': {
+                    'Text': 'Quiero ver TVPerú',
+                    'Do': openTVPeru
+                },
+                'IPe': {
+                    'Text': 'Quiero ver el canal IPe',
+                    'Do': openIPe
+                },
+                'No': {
+                    'Text': 'Quizás más tarde',
+                    'Do': 'b1 No hay problema, me puedes volver a preguntar más tarde si gustas.'
+                }
+            }
+        },
+        'b1 A la hora que te corresponda según tu grado, también podrás escuchar las lecciones por Radio Nacional',
+        'b1 y si quisieras, también puedo hacer que escuches la radio ahora mismo...',
+        {
+            'Choice': {
+                'Dialog': 'b1 ¿Quieres escuchar Radio Nacional?',
+                'RadioNacional': {
+                    'Text': 'Sí, por favor',
+                    'Do': openRadioNacional
+                },
+                'No': {
+                    'Text': 'Quizás en otro momento',
+                    'Do': 'b1 No hay problema, de igual manera puedes consultármelo cuando desees.'
+                }
+            }
+        },
+        'jump End'
     ],
     'End': [
         // 'show character b1 goodbye at center',
