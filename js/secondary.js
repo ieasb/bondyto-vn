@@ -15,7 +15,7 @@ monogatari.script ({
                 }
             }
         },
-        'b1 Te cuento que el Gobierno va a transmitir las actividades de acuerdo al siguiente horario:',
+        'b1 Te cuento que esta semana el Gobierno va a transmitir las actividades de acuerdo al siguiente horario:',
         'show message SchedulingSecondary',
         'jump BroadcastingDetails'
     ]
