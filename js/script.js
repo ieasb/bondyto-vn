@@ -149,7 +149,6 @@ monogatari.assets ('scenes', {
     school: "school.png"
 });
 
-
 // Define the Characters
 monogatari.characters ({
     'b1': {
@@ -230,7 +229,7 @@ monogatari.script ({
         {
             'Choice': {
                 'Dialog': 'b1 ¿Quieres ver algún canal ahora mismo?',
-                'TVPerú': {
+                'TVPeru': {
                     'Text': 'Quiero ver TVPerú',
                     'Do': openTVPeru
                 },
@@ -281,28 +280,3 @@ monogatari.script ({
         'end'
     ]
 });
-
-var openAprendoEnCasaPrimary = function() {
-    return openNewWindow('https://aprendoencasa.pe/#/nivel/primaria');
-}
-
-var openAprendoEnCasaSecondary = function() {
-    return openNewWindow('https://aprendoencasa.pe/#/nivel/secundaria');
-}
-
-var openTVPeru = function() {
-    return openNewWindow('https://www.tvperu.gob.pe/play');
-}
-
-var openIPe = function() {
-    return openNewWindow('https://www.canalipe.tv/streaming');
-}
-
-var openRadioNacional = function() {
-    return openNewWindow('https://radionacional.com.pe/envivo');
-}
-
-function openNewWindow(url) {
-    var win = window.open(url, '_blank');
-    win.focus();
-}
