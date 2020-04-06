@@ -95,14 +95,9 @@ monogatari.configuration ('credits', {
     "": {
         "Diseño de personajes / Diagramación": "Ammy S. Machuca",
         "Programación": "Jorge Puente-Sarrín",
-        "Contenido / Edición": "",
-    },
-    "Agradecimientos especiales": {
-        "My parents": ["Mom", "Dad"], 
-        "My siblings": ["Brother", "Sister"],
     },
     "Créditos de recursos externos": {
-        "": "",
+        "RPP Noticias": "Fondo de escena utilizado",
     }
 
 });
