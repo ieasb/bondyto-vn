@@ -68,7 +68,7 @@ monogatari.action ('message').messages ({
                 </tr>
                 <tr>
                     <td>3°, 4° y 5°</td>
-                    <td>Martes 7 - 2:00 a.m.</td>
+                    <td>Martes 7 - 2:00 p.m.</td>
                     <td>Lunes 6 y Miércoles 8 - 9:30 a.m.</td>
                 </tr>
             </table>
